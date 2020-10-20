@@ -1,0 +1,84 @@
+*, *:after, *:before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.button{
+    color: #000;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.2s ease-in-out;
+}
+
+.button:hover{
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.container{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.todo-list{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+.todo-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+}
+
+.todo-item{
+    padding: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.todo-item-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.todo-subList{
+    list-style: disc;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+.todo-subItem{
+    border-bottom: 2px solid crimson;
+    display: flex;
+    flex-direction: row;
+    align-item: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+.todo-subItem:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.item--checked{
+    font-style: italic;
+    text-decoration: line-through;
+}
+.todo-item:not(:last-child){
+    margin-bottom: 20px;
+}
